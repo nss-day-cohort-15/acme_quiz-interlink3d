@@ -1,0 +1,58 @@
+{
+    "types": [
+        {
+            "id": 0,
+            "category": 0,
+            "name": "Rocket Bursts",
+            "description": "Airborne Rocket Fireworks intended for recreational use during holiday celebrations"
+        },
+        {
+            "id": 1,
+            "category": 0,
+            "name": "Mortar Shells",
+            "description": "Intermediate User loud and bright Fireworks intended for recreational use during holiday celebrations"
+        },
+        {
+            "id": 2,
+            "category": 0,
+            "name": "Howlin Howies",
+            "description": "Screaming ear piercing type fireworks"
+        },
+        {
+            "id": 3,
+            "category": 1,
+            "name": "Peepsqueak",
+            "description": "barely register hertz on an audiogram"
+        },
+        {
+            "id": 4,
+            "category": 1,
+            "name": "I hear you",
+            "description": "Now we are talking hertz!"
+        },
+        {
+            "id": 5,
+            "category": 1,
+            "name": "Deafly",
+            "description": "Did you say something...? No really, I can't hear you!"
+        },
+        {
+            "id": 6,
+            "category": 2,
+            "name": "Sparkling Fountains",
+            "description": "Bright and colorful fireworks intended for recreational use during holiday celebrations"
+        },
+        {
+            "id": 7,
+            "category": 2,
+            "name": "Sparklers",
+            "description": "For day to day use in all types of celebrations"
+        },
+        {
+            "id": 8,
+            "category": 2,
+            "name": "Novelty",
+            "description": "Wide variety of characters, animals, and surprise for all celebrations"
+        }
+    ]
+}
