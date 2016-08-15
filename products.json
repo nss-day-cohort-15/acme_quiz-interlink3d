@@ -1,40 +1,40 @@
 {
     "products": [{
-        "fairy_sparklers": {
+        "white_rockets": {
             "id": 0,
             "type": 0,
-            "name": "Fairy Sparklers",
-            "description": "Multi-colored sparklers."
+            "name": "White Rockets",
+            "description": "White explosion from rocket."
         },
-        "fairy_sparklers": {
+        "red_rockets": {
             "id": 1,
             "type": 0,
-            "name": "Fairy Sparklers",
-            "description": "Multi-colored sparklers."
+            "name": "Red Rockets",
+            "description": "Red explosion from rocket."
         },
-        "fairy_sparklers": {
+        "blue_rockets": {
             "id": 2,
             "type": 0,
-            "name": "Fairy Sparklers",
-            "description": "Multi-colored sparklers."
+            "name": "Blue Rockets",
+            "description": "Blue explosion from rocket."
         },
-        "fairy_sparklers": {
+        "white_shells": {
             "id": 3,
             "type": 1,
-            "name": "Fairy Sparklers",
-            "description": "Multi-colored sparklers."
+            "name": "White Shells",
+            "description": "White explosion from mortar shells."
         },
-        "fairy_sparklers": {
+        "red_shells": {
             "id": 4,
             "type": 1,
-            "name": "Fairy Sparklers",
-            "description": "Multi-colored sparklers."
+            "name": "Red Shells",
+            "description": "Red explosion from mortar shells."
         },
-        "fairy_sparklers": {
+        "blue_shells": {
             "id": 5,
             "type": 1,
-            "name": "Fairy Sparklers",
-            "description": "Multi-colored sparklers."
+            "name": "Blue Shells",
+            "description": "Blue explosion from mortar shells."
         },
         "fairy_sparklers": {
             "id": 6,
