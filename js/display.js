@@ -26,45 +26,67 @@ var display = function (categories,types,products){
 var fireInv = function () {
   console.log('fireworks dom load')
     $("#fwGrid").empty();
-    pretty.forEach(function (){
-        $("#fwGrid").append(
-        `<h1>"hello"</h1><div class="col-md-3">
-        <div class="singleFirework" style="background-color: red">
-        <h5>Category: ${categories[types[pretty.type].category].name}</h5>
-        <h5>Type: ${types[pretty.type].name}</h5>
+    var res1 = "";
+    pretty.forEach(function (fire){
+      res1 +=
+        `"results1"
+        <div class="row"
+        <div class="col-md-3">
+        <div class="singleFirework" style="background-color: tomato;">
+        <h5>Category: ${pretty.id}</h5>
+        <h5>Type: ${pretty.type}</h5>
         <h5>Product Name: ${pretty.name}</h5>
-        <p>${pretty.description}</p></div></div>`
-        )});
+        <p>${pretty.description}</p>
+        </div>
+        </div>
+        </div>`
 
+      });
+        $("#fwGrid").append(res1)
 };
 
 var explInv = function () {
+  console.log('explosives dom load')
     $("#fwGrid").empty();
-    explosives.forEach(function (){
-        $("#fwGrid").append(
-        `<div class="col-md-3">
-        <div class="singleFirework" style="background-color: white">
-        <h5>Category: ${categories[types[explosives.type].category].name}</h5>
-        <h5>Type: ${types[explosives.type].name}</h5>
-        <h5>Product Name: ${explosives.name}</h5>
-        <p>${explosives.description}</p>
-        <div class="col-md-1"></div></div>`
-        )});
+    var res2 = "";
+    explosives.forEach(function (explode){
+       res2 +=
+        `"results2"
+        <div class="row"
+        <div class="col-md-3">
+        <div class="singleFirework" style="background-color: lightgrey;">
+        <h5>Category: ${pretty.id}</h5>
+        <h5>Type: ${pretty.type}</h5>
+        <h5>Product Name: ${pretty.name}</h5>
+        <p>${pretty.description}</p>
+        </div>
+        </div>
+        </div>`
 
+      });
+        $("#fwGrid").append(res2)
 };
 
 var kidsInv = function () {
+  console.log('kids dom load')
     $("#fwGrid").empty();
-    kids.forEach(function (){
-        $("#fwGrid").append(
-        `<div class="col-md-3">
-        <div class="singleFirework" style="background-color: blue">
-        <h5>Category: ${categories[types[kids.type].category].name}</h5>
-        <h5>Type: ${types[kids.type].name}</h5>
-        <h5>Product Name: ${kids.name}</h5>
-        <p>${kids.description}</p></div></div>`
-        )});
+    var res3 = "";
+    kids.forEach(function (play){
+        res3 +=
+        `"results3"
+        <div class="row"
+        <div class="col-md-3">
+        <div class="singleFirework" style="background-color: lightblue;">
+        <h5>Category: ${pretty.id}</h5>
+        <h5>Type: ${pretty.type}</h5>
+        <h5>Product Name: ${pretty.name}</h5>
+        <p>${pretty.description}</p>
+        </div>
+        </div>
+        </div>`
 
+      });
+        $("#fwGrid").append(res3)
 };
 
 $("#fire").click(fireInv);
