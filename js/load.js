@@ -1,33 +1,32 @@
 console.log("load.js")
-$(document).ready(function () {
 
-var DirtStand = (function (loadInv) {
-  var categories = [];
-  var types = [];
-  var products = [];
+// $(document).ready(function () {
 
-
-  loadInv.stockShelves = function (display) {
-    Promise.all([
-      $.getJSON('categories.json'),
-      $.getJSON('types.json'),
-      $.getJSON('products')
-      ])
+var stockShelves = function () {
+  Promise.all([
+    $.getJSON('categories.json'),
+    $.getJSON('types.json'),
+    $.getJSON('products.json')
+    ])
 
 
-      .then(function(resolve){
-        categories = resolve[0].categories
-        types = resolve[1].types
-        products = resolve[2].products[0]
-        resolve(categories, types, products)
-      })
+    .then(function(resolve){
+      var categories = resolve[0].categories
+      var types = resolve[1].types
+      var products = resolve[2].products[0]
+      display(categories, types, products);
 
-    }
+    })
+}
 
-  return loadInv;
+stockShelves();
 
+// })
 
-  // loadInv.stockShelves = function (display) {
+// started to work through the individual getJSON calls and chaining them
+// but was getting hung up. Moved to doing promise.all
+
+  // stockShelves = function () {
 
   //   $.getJSON('categories.json')
   //     .then( function(resolve) {
@@ -51,6 +50,3 @@ var DirtStand = (function (loadInv) {
 
   // }
 
-    })
-      (DirtStand || {})
-})

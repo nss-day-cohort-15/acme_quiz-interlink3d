@@ -10,15 +10,15 @@
       <header><h1>Joe Dirt's Firework Stand</h1></header>
       <div class="container">
         <div class="navBar">
-
-          <select id="cat" required>
-            <option disabled="true" selected="true">Please Select a Category</option>
-            <option value="1">Thing 1</option>
-            <option value="2">Thang 2</option>
-          </select>
-
+          <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Categories <span class="caret"></span></button>
+              <ul class="dropdown-menu">
+                <li id="fire"><a href=#>Pretty Fireworks</a></li>
+                <li id="expl"><a href=#>Explosives</a></li>
+                <li id="kids"><a href=#>For Kids</a></li>
+              </ul>
+          </div>
         </div>
-
       </div>
 
         <div class="container-fluid grid" id="fwGrid">
@@ -28,6 +28,7 @@
 
     </div>
   <script src="/bower_components/jquery/dist/jquery.min.js" type="text/javascript"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="../js/load.js" type="text/javascript"></script>
   <script src="../js/display.js" type="text/javascript"></script>
 </body>
