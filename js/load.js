@@ -1,6 +1,8 @@
 console.log("load.js")
 
 // $(document).ready(function () {
+var categories;
+var types;
 
 var stockShelves = function () {
   Promise.all([
@@ -11,8 +13,8 @@ var stockShelves = function () {
 
 
     .then(function(resolve){
-      var categories = resolve[0].categories
-      var types = resolve[1].types
+      categories = resolve[0].categories
+      types = resolve[1].types
       var products = resolve[2].products[0]
       display(categories, types, products);
 
@@ -20,6 +22,14 @@ var stockShelves = function () {
 }
 
 stockShelves();
+
+getCategories = function () {
+  return categories;
+};
+
+getTypes = function () {
+  return types;
+};
 
 // })
 

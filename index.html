@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Acme Quiz</title>
-  <link rel="stylesheet" type="text/css" href="/bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
@@ -11,11 +11,11 @@
       <div class="container">
         <div class="navBar">
           <div class="dropdown">
-            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Categories <span class="caret"></span></button>
-              <ul class="dropdown-menu">
-                <li id="fire"><a href=#>Pretty Fireworks</a></li>
-                <li id="expl"><a href=#>Explosives</a></li>
-                <li id="kids"><a href=#>For Kids</a></li>
+            <button class="btn btn-default dropdown-toggle" type="button" id="dd" data-toggle="dropdown">Categories <span class="caret"></span></button>
+              <ul class="dropdown-menu" aria-labelledby="dd">
+                <li><a href="#" id="fire">Pretty Fireworks</a></li>
+                <li><a href="#" id="expl">Explosives</a></li>
+                <li><a href="#" id="kids">For Kids</a></li>
               </ul>
           </div>
         </div>
@@ -27,7 +27,7 @@
         </div>
 
     </div>
-  <script src="/bower_components/jquery/dist/jquery.min.js" type="text/javascript"></script>
+  <script src="bower_components/jquery/dist/jquery.min.js" type="text/javascript"></script>
   <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="../js/load.js" type="text/javascript"></script>
   <script src="../js/display.js" type="text/javascript"></script>
