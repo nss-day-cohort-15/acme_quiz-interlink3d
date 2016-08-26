@@ -1,0 +1,16 @@
+{
+    "categories": [
+        {
+            "id": 0,
+            "name": "Pretty Fireworks"
+        },
+        {
+            "id": 1,
+            "name": "Explosives"
+        },
+        {
+            "id": 2,
+            "name": "For Kids"
+        }
+    ]
+}

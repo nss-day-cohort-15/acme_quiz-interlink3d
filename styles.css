@@ -1,0 +1,10 @@
+h1 {
+  text-align: center;
+  font-weight: bold;
+  color: green;
+}
+
+.singleFirework {
+  padding-left: 10px;
+  padding-bottom: 5px;
+}
